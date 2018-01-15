@@ -2,6 +2,7 @@ module.exports = {
   /*
   ** Headers of the page
   */
+
   head: {
     title: 'vue',
     meta: [
@@ -10,13 +11,17 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Nuxt.js project' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css', integrity: 'sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ',  crossorigin: 'anonymous' }
+
+
     ]
   },
   /*
   ** Customize the progress bar color
   */
   loading: { color: '#3B8070' },
+  modules: [['@nuxtjs/bootstrap-vue', { css: false }]],
   /*
   ** Build configuration
   */
